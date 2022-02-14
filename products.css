@@ -1,3 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: rgb(62, 126, 185);
+  overflow-x: hidden;
+}
+nav {
+  padding: 15px;
+  width: 100vw;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 50px;
+}
+nav h2 {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+ul {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+}
+ul li {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 500px;
+  background-color: rgb(65, 94, 109);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 18px;
+}
+ul li h3 {
+  font-size: 1.5rem;
+  color: white;
+}
+.desc {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.card-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
 img {
-  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.description1,
+.description2 {
+  display: none;
+}
+.descShow {
+  display: block;
+}
+.readMore {
+  width: max-content;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #0a66c2;
+  color: #ffffff;
+}
+.readMore:hover {
+  cursor: pointer;
+  background-color: #16437e;
+}
+/* CSS */
+
+/* CSS */
+.button-18 {
+  align-items: center;
+  background-color: #0a66c2;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto,
+    "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
+    "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.button-18:hover,
+.button-18:focus {
+  background-color: #16437e;
+  color: #ffffff;
+}
+
+.button-18:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, 0.7);
+}
+
+.button-18:disabled {
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, 0.08);
+  color: rgba(0, 0, 0, 0.3);
 }

@@ -11,23 +11,25 @@
 
   <body>
     <nav>
-      <h1 class="title">Simple Commerce</h1>
+      <h2 class="title">Simple Commerce</h2>
     </nav>
     <h1>Products</h1>
 
     <section>
-      <ol>
+      <ul>
         <li>
           <h3>LG Double door refrigerator</h3>
-          <p><b>Rs.</b> 35000</p>
-          <p><b>Category.</b> Refrigerator</p>
-          <p><b>Company.</b> LG</p>
-
           <img
             src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.MDVYGtJMMZz8SJYb2fvFZgHaHa%26pid%3DApi&f=1"
             alt="lg fridge"
           />
-          <p>
+          <div class="desc">
+            <p><b>Rs.</b> 35000</p>
+            <p><b>Category.</b> Refrigerator</p>
+            <p><b>Company.</b> LG</p>
+          </div>
+
+          <p class="description1">
             <b>Description: </b> Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Quaerat, magnam impedit assumenda culpa laborum
             tempora omnis reprehenderit officia, odit mollitia blanditiis
@@ -36,22 +38,27 @@
             adipisicing elit. Dignissimos sunt tempore illum quasi quod atque
             dolorem quam odio omnis nobis?
           </p>
+          <div class="readMore1 readMore">Read More</div>
           <br />
-          <p><b>Rating: </b> 4.0</p>
-          <button>Buy Now</button>
+          <div class="card-footer">
+            <p><b>Rating: </b> 4.0</p>
+            <button class="button-18" role="button">Buy Now</button>
+          </div>
         </li>
 
         <li>
           <h3>Apple Iphone 13 Pro Max</h3>
-          <p><b>Rs.</b> 30000</p>
-          <p><b>Category.</b> Phone</p>
-          <p><b>Company.</b> Apple</p>
-
           <img
             src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.c8rrLMFn68ETVNwoi46GHgHaMK%26pid%3DApi&f=1"
-            alt="iPhone"
+            alt="iphone"
           />
-          <p>
+          <div class="desc">
+            <p><b>Rs.</b> 85000</p>
+            <p><b>Category.</b> Mobile Phones</p>
+            <p><b>Company.</b> Apple</p>
+          </div>
+
+          <p class="description2">
             <b>Description: </b> Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Quaerat, magnam impedit assumenda culpa laborum
             tempora omnis reprehenderit officia, odit mollitia blanditiis
@@ -60,11 +67,15 @@
             adipisicing elit. Dignissimos sunt tempore illum quasi quod atque
             dolorem quam odio omnis nobis?
           </p>
+          <div class="readMore2 readMore">Read More</div>
           <br />
-          <p><b>Rating: </b> 4.0</p>
-          <button>Buy Now</button>
+          <div class="card-footer">
+            <p><b>Rating: </b> 4.0</p>
+            <button class="button-18" role="button">Buy Now</button>
+          </div>
         </li>
-      </ol>
+      </ul>
     </section>
+    <script src="./products.js"></script>
   </body>
 </html>
