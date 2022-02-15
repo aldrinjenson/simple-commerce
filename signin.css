@@ -109,6 +109,10 @@ section {
   background-color: #1c84ff;
 }
 
+.login-subtext {
+  text-align: center;
+}
+
 @media only screen and (max-width: 600px) {
   section {
     position: absolute;
