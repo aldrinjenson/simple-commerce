@@ -240,7 +240,9 @@
           <input type="text" placeholder="Enter email" />
           <input type="password" placeholder="Enter password" />
 
-          <button class="button-22" role="button">Login</button>
+          <button class="button-22" role="button" onclick="handleLogin()">
+            Login
+          </button>
           <br />
           <p class="login-subtext">
             New User? <a href="./signup.html">Signup</a>
@@ -249,4 +251,6 @@
       </div>
     </section>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script src="/javascripts/signin.js"></script>
 </html>
