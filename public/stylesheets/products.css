@@ -38,6 +38,7 @@ ul li {
   justify-content: center;
   padding: 15px;
   border-radius: 18px;
+  min-height: 80vh;
 }
 ul li h3 {
   font-size: 1.5rem;
@@ -61,7 +62,7 @@ img {
 
 .description1,
 .description2 {
-  display: none;
+  display: block;
 }
 .descShow {
   display: block;

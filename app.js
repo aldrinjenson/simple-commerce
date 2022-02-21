@@ -3,13 +3,11 @@ const express = require("express");
 const path = require("path");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
-const { createClient } = require("@supabase/supabase-js");
 
 const indexRouter = require("./routes/index");
 const usersRouter = require("./routes/users");
 
 const app = express();
-const supabase = createClient(process.env.DB_URL, process.env.PUBLIC_KEY);
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));

@@ -17,62 +17,28 @@
 
     <section>
       <ul>
+        <% products.forEach(p=>{ -%>
         <li>
-          <h3>LG Double door refrigerator</h3>
-          <img
-            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.MDVYGtJMMZz8SJYb2fvFZgHaHa%26pid%3DApi&f=1"
-            alt="lg fridge"
-          />
+          <h3><%= p.name %></h3>
+          <img src="<%=p.imgUrl%>" alt="iphone" />
           <div class="desc">
-            <p><b>Rs.</b> 35000</p>
-            <p><b>Category.</b> Refrigerator</p>
-            <p><b>Company.</b> LG</p>
-          </div>
-
-          <p class="description1">
-            <b>Description: </b> Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quaerat, magnam impedit assumenda culpa laborum
-            tempora omnis reprehenderit officia, odit mollitia blanditiis
-            architecto voluptate nemo eaque consequatur officiis reiciendis
-            repudiandae obcaecati. Lorem, ipsum dolor sit amet consectetur
-            adipisicing elit. Dignissimos sunt tempore illum quasi quod atque
-            dolorem quam odio omnis nobis?
-          </p>
-          <div class="readMore1 readMore">Read More</div>
-          <br />
-          <div class="card-footer">
-            <p><b>Rating: </b> 4.0</p>
-            <button class="button-18" role="button">Buy Now</button>
-          </div>
-        </li>
-
-        <li>
-          <h3>Apple Iphone 13 Pro Max</h3>
-          <img
-            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.c8rrLMFn68ETVNwoi46GHgHaMK%26pid%3DApi&f=1"
-            alt="iphone"
-          />
-          <div class="desc">
-            <p><b>Rs.</b> 85000</p>
+            <p><b>Rs.</b> <%= p.price %></p>
             <p><b>Category.</b> Mobile Phones</p>
             <p><b>Company.</b> Apple</p>
           </div>
 
           <p class="description2">
-            <b>Description: </b> Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quaerat, magnam impedit assumenda culpa laborum
-            tempora omnis reprehenderit officia, odit mollitia blanditiis
-            architecto voluptate nemo eaque consequatur officiis reiciendis
-            repudiandae obcaecati. Lorem, ipsum dolor sit amet consectetur
-            adipisicing elit. Dignissimos sunt tempore illum quasi quod atque
-            dolorem quam odio omnis nobis?
+            <b>Description: </b>
+            <%= p.description %>
           </p>
-          <div class="readMore2 readMore">Read More</div>
+          <!-- <div class="readMore2 readMore">Read More</div> -->
           <br />
           <div class="card-footer">
-            <p><b>Rating: </b> 4.0</p>
+            <p><b>Rating: </b> <%= p.rating %></p>
             <button class="button-18" role="button">Buy Now</button>
           </div>
+
+          <% }); -%>
         </li>
       </ul>
     </section>
