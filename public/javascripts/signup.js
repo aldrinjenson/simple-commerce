@@ -9,7 +9,7 @@ const _supabase = createClient(
 );
 
 const handleSignUp = async (e) => {
-  if (pass1.value !== pass2.value) {
+  if (!pass1.value || pass1.value !== pass2.value) {
     return alert("Passwords doesn't match!\nPlease try again");
   }
 
@@ -19,7 +19,6 @@ const handleSignUp = async (e) => {
   });
   if (!user || error) {
     console.log("error in signup: " + error.message);
-    console.log(error);
 
     return alert(
       "There is some error in signing up. Please check your details and try again after some time.\n" +
@@ -29,5 +28,5 @@ const handleSignUp = async (e) => {
   alert("Successfully signed up");
   setTimeout(() => {
     window.location = "products";
-  }, 2000);
+  }, 1000);
 };
