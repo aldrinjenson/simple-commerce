@@ -67,18 +67,6 @@ img {
 .descShow {
   display: block;
 }
-.readMore {
-  width: max-content;
-  padding: 5px;
-  border-radius: 5px;
-  background-color: #0a66c2;
-  color: #ffffff;
-}
-.readMore:hover {
-  cursor: pointer;
-  background-color: #16437e;
-}
-/* CSS */
 
 /* CSS */
 .button-18 {
