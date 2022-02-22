@@ -10,8 +10,11 @@
   </head>
 
   <body>
-    <nav>
+    <nav
+      style="display: flex; justify-content: space-between; padding-right: 5rem"
+    >
       <h2 class="title">Simple Commerce</h2>
+      <button class="button-18" id="logoutBtn">Log Out</button>
     </nav>
     <h1>Products</h1>
 
@@ -35,13 +38,54 @@
           <br />
           <div class="card-footer">
             <p><b>Rating: </b> <%= p.rating %></p>
-            <button class="button-18" role="button">Buy Now</button>
+            <button class="button-18 buyBtn" role="button" id="<%= p.id %>">
+              Buy Now
+            </button>
           </div>
 
           <% }); -%>
         </li>
       </ul>
     </section>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="buy-form">
+          <h2>Enter Delivery Details</h2>
+          <input
+            class="buyFormInput"
+            type="text"
+            id="customerName"
+            placeholder="Name of person to whom the product is to be delivered"
+          />
+          <input
+            class="buyFormInput"
+            required
+            type="text"
+            id="address"
+            placeholder="Delivery address"
+          />
+          <input
+            class="buyFormInput"
+            type="text"
+            id="pinCode"
+            placeholder="Delivery pinCode"
+          />
+          <input
+            class="buyFormInput"
+            type="text"
+            id="preferredTime"
+            placeholder="Preferred Delivery time"
+          />
+          <button onclick="handleBuy()" class="button-18">Order Product</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
     <script src="/javascripts/products.js"></script>
   </body>
 </html>
